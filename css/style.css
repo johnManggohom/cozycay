@@ -700,9 +700,6 @@ flex-direction: column;
   padding: 20px 10px;
 }
 
-
-
-
 /* --------------------------------subcribe---------------------------------------- */
 
 .section8 {
@@ -795,7 +792,10 @@ flex-direction: column;
 }
 .img_cont {
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .dahon {
@@ -839,7 +839,14 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  padding: 90px 50px 50px 50px;
+  /* padding: 90px 50px 50px 50px; */
+}
+
+.reviewed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .webtit {
   font-family: Montserrat;
@@ -850,7 +857,8 @@ flex-direction: column;
   text-transform: capitalize;
   color: rgb(22, 25, 30);
   width: 500px;
-  margin-left: 100px;
+  text-align: start;
+
   margin-bottom: 20px;
 }
 .webtit2 {
@@ -859,19 +867,20 @@ flex-direction: column;
 .para {
   width: 500px;
   height: 72px;
-  margin-left: 100px;
-  margin-top: 1px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
   opacity: 0.6;
-  margin-top: 5px;
+  text-align: start;
 }
 .tainer2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .boy {
@@ -880,7 +889,7 @@ flex-direction: column;
   left: 700px;
   margin-top: 30px;
 }
-.name1 {
+.tainer3 .name1 {
   width: 145px;
   height: 32px;
   margin-top: 40px;
@@ -894,12 +903,12 @@ flex-direction: column;
   margin-top: 1px;
   margin-bottom: 5px;
 }
-.master {
+.tainer3 .master {
   width: 100px;
   left: 700px;
   top: 135px;
 }
-.cha {
+.tainer3 .cha {
   width: 435px;
   height: 96px;
   left: 700px;

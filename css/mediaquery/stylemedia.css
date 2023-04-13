@@ -50,6 +50,19 @@
   .first-bg .cars1{
     width: 850px;
   }
+  .tainer1 {
+    gap: 0px;
+  }
+
+  .reviewed{
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1014px) {
+  .tainer1 {
+    flex-direction: column;
+  }
 }
 
 @media (max-width:945px) {
@@ -327,6 +340,36 @@
   .button .viewall{
     width: 360px;
   }
+
+  .section6{
+    height: auto;
+  }
+
+  .tainer1{
+    gap: 70px;
+  }
+
+  .tainer2{
+    height: auto;
+  }
+
+  .tainer3{
+    width: 300px;
+    height: 350px;
+  }
+
+  .tainer3 .cha{
+    width: 250px;
+  }
+  .webtit{
+    font-size: 36px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .para{
+    width: 265px;
+  }
 }
 
 
@@ -464,6 +507,17 @@
 
   .cars1 .cards{
     width: 330px !important;
+  }
+
+  .motor-main .card{
+    width: 333px !important;
+  }
+  .tainer1{
+    gap: 50px;
+  }
+
+  .para{
+    width:275px;
   }
 
   
