@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motor Application Form</title>
+    <title>Java Project</title>
 
-    <link rel="stylesheet" href="./css/appformCARS.css">
-    <link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/MotorApp.css">
+    <link rel="stylesheet" href="css/MotorApp.css">
 
-
+    <!-- Google APi Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
-<!-- ---------------------------------NAVBAR------------------------------------------------------------- -->
-<header>
-    <!--Logo-->
-    <div class="brand">
-        <img src="./img/Logo Design 2 2.png" alt="logo">
-    </div>
-    <!--Tabs-->
-    <nav class="header-nav">
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="./carsPage.html">Cars</a>
-            </li>
-            <li class="nav-item">
-                <a href="./MotorPage.html">Motorcycles</a>
-            </li>
-            <li class="nav-item">
-                <a href="./aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a href="./ContactPage.html">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="btn-login">
-        <a href="SignIn.html">Login</a>
-    </div>
-</header>
 
 <body>
 
-<!-- ---------------------------------------------------CAR PIC/CAROUSELL---------------------------------------------- -->
-    <section class="sec1">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <header>
+        <!--Logo-->
+        <div class="brand">
+            <img src="./img/Logo Design 2 2.png" alt="logo">
+        </div>
+        <!--Tabs-->
+        <nav class="header-nav">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./carsPage.html">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./MotorPage.html">Motorcycles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ContactPage.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="btn-login">
+            <a href="SignIn.html">Login</a>
+        </div>
+    </header>
+
+
+    <!--                    CAROUSEL                   -->
+
+    <section class="section2">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -65,15 +72,24 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active bgc-1">
+                    <div class="content-carousel">
+                        <img src="img/click.jpg" alt="" class="frame1">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>	
 
-                    <div class="">
-                        <img src="./img/click.jpg" alt="" class="frame1">
+
+                    <!-- <img class="d-block w-100" src="./img/How to Property 1= Default.png" alt="First slide"> -->
+                </div>
+                <div class="carousel-item bgc-2">
+                    <div class="content-carousel">
+                        <img src="img/images/brv-2023.jpg" alt="" class="frame2">
+                        <div class="carousel-caption">
+                        </div>
                     </div>
-
+                    <!-- <img class="d-block w-100" src="./img/How to Variant2.png" alt="Second slide"> -->
                 </div>
-    
-                </div>
-            </div>	
+            </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -83,492 +99,429 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
     </section>
-	
-	
-	
-	
-	<div class="float-container">
 
-  <div class="float-child">
-    <div class="green">Honda Click 150i</div>
-	<div id="exampleA">
-        <table id="example1">
-            <tr id="var1st">
-                <th style="border-right: none;">Model</th>
-                <th style="border-left: none;">Price</th>
-            </tr>
-            <tr>
-                <tr>
-                    <td ><h1 style="color: #003BEC"><b>Honda Click 150i<b/></h1><br><h3> HONDA - The Power of Dreams </h3></td>
-                    <td><h2>₱76,900</h2></td>
-                </tr>
-                <tr>
-                    <td><b>Specification </b></td>
-                    <td style="color: #003BEC"><b> Engine Type/Brake System</td><br>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>4 Stroke, SOHC, Liquid-Cooled, eSP,Hydraulic Disc Brake / Mechanical Leading Trailing</td>
-               </tr>
-            
-  
-            <tr>
-               
-                <tr>
-                    <td></td>
-                    <td><span style="color: #003BEC">Seat Height </span><br>769 mm</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-						<br><span style="color: #003BEC">Seat Height </span><br>769 mm<br><br>
-						<span style="color: #003BEC ">Fuel Capacity (L)</span><br>5.5 L<br><br>
-                        <span style="color: #003BEC ">Displacement (cc)</span><br>150cc<br><br><br>
-                        <span style="color: #003BEC ">Transmission</span><br>Automatic<br><br>
-                        <span style="color: #003BEC ">Front Tire</span><br>90/80 - 14 M/C 43P<br><br>
-						<span style="color: #003BEC ">Wheels Type</span><br>Cast Wheel<br><br>
-						<span style="color: #003BEC ">Starting System</span><br>Electric / DECOMP<br><br>
-						<span style="color: #003BEC ">Rear Tire</span><br>100/80 - 14 M/C 48P<br><br>
-						<span style="color: #003BEC ">Overall Dimensions (lenght x width x height)</span><br>Dimensions (lenght x width x height)1,919 x 679 x 1,062 (mm)<br><br>
-						<span style="color: #003BEC ">Fuel System</span><br>PGM-Fi<br><br>
-						<span style="color: #003BEC ">Headlight</span><br>LED<br><br>
-						<span style="color: #003BEC ">Security System</span><br>Anti-Theft Alarm<br><br>
-						
-						
-						</td>
-                </tr>
-                <tr>
-                    <td>Color</td>
-                    <td><img src="img/images/color2.png " alt=" "></td>
-                </tr>
-                <tr>
-                    <td class="specs"><button type="button" class="btn btn-primary">View Full Specs</button></td>
-                </tr>
+    <!--                         DESCRIPTION                     -->
+<div class="cont">
+    <div class="descc">
 
-            </tr>
-
-        </table>
+    <div>
+        <span id="h"> Honda Click 150i</span>
+        <input class="searchBar" type="text"  onkeyup="myFunction()" placeholder="Search Brand or Model" title="Type in a category">
     </div>
-  </div>
-  
-  
-  <div class="float-child">
-     <div class="searchBar">
-            <input type="text" id="search" onkeyup="myFunction()" placeholder="Search Brand or Model" title="Type in a category">
-        </div>
-		<div class="desc">
-		  <p>With its stylish looks and efficient performance all topped up with an affordable price, the Honda Click 150i is sure to attract many motorcycle buyers of today. Updated in 2018, this scooter is made available with only one Standard version. The said variant retails at P98,900.</p>
+
+       
+    <!--                 RATING           -->
+    <div class="desc">
+       <p>With its stylish looks and efficient performance all topped up with an affordable price, the Honda Click 150i is sure to attract many motorcycle buyers of today. Updated in 2018, this scooter is made available with only one Standard version. The said variant retails at P98,900.</p>
 
     <p>Key equipment in the Click 150i includes LED taillights and headlights, a sports-style muffler with aluminum end cap, a digital instrument cluster, and an idling-stop system that switches off the engine during traffic stops, and back on again when it’s time to accelerate in order to avoid unnecessary fuel consumption.</p>
 --
     <p>Its beating heart is a liquid-cooled, four-stroke, SOHC, 150cc engine that produces 13hp and 13Nm of torque. The engine is fuel-injected and is mated to a continuously variable transmission (CVT). For safety, the Click 150i is fitted with a front disc brake.</p>
-             <button id="myBtn">See more</button>
+            <button id="myBtn">See more</button>
         </p>
-		
-        <h1 id="h">Honda Click 150i Owner Review</h1>
-        <p>Find out from real owners what it's like to own Honda Click 150i</p>
+        <h1 id="h2">Honda Click 150i Owner Review</h1>
+        <p id="p1">Find out from real owners what it's like to own Honda Click 150i.</p>
+
+
         <div class="rating">
-            <span class="heading">Overall Rating &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 4.9/5.0&emsp;&emsp;&nbsp;</span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <div class="row">
-                <div class="side">
+            <div>
+                <span class="heading">Overall Rating</span>
+                
+                <div class="side starpadding">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                 </div>
-                <div class="middle">
-                    <div>Performance</div>
-                    <h6>Engine Output (HP), Acceleration, Transmission, Handling</h6>
-                    <div class="bar-container">
-                        <div class="bar-5"></div>
-                    </div>
-                </div>
-                <div class="side right">
-                    <div>5.0/5</div>
-                </div>
-                <div class="side">
-                </div>
-                <div class="middle">
-                    <div>Design</div>
-                    
-					<h6>Quality, Exterior and Interior Design</h6>
-                    <div class="bar-container">
-                        <div class="bar-4"></div>
-                    </div>
-                </div>
-                <div class="side right">
-                    <div>5.0/5</div>
-                </div>
-                <div class="side">
-                </div>
-                <div class="middle">
-                    <div>Comfort</div>
-                    <h6>Suspension and Cabin Comfort </h6>
-                    <div class="bar-container">
-                        <div class="bar-3"></div>
-                    </div>
-                </div>
-                <div class="side right">
-                    <div>4.9/5</div>
-                </div>
-                <div class="side">
-                </div>
-                <div class="middle">
-                    <div>Value</div>
-                    <h6>Worthy and Quality of the car</h6>
-                    <div class="bar-container">
-                        <div class="bar-2"></div>
-                    </div>
-                </div>
-                <div class="side right">
-                    <div>5.0/5</div>
-                </div>
-                <div class="side">
-                </div>
-                <div class="middle">
-                    <div>Safety and Technology</div>
-                    <h6>Technology Features</h6>
-                    <div class="bar-container">
-                        <div class="bar-1"></div>
-                    </div>
-                </div>
-                <div class="side right">
-                    <div>4.9/5</div>
-                </div>
+                <span class="side">4.9/5.0</span>
             </div>
-
-        </div>
-    </div>
-		
-		
-		
-		
-  </div>
   
-</div>
-	
-	
-	
-	
-	
-	
-	
-<!-- ------------------------------------------------------------------INPUT INFO SECTION----------------------------------------------------- -->
-    <section class="sec2">
-        <div class="main-sec2">
-            <div class="header-sec2">
-                <p>Ready to Buy? Get Quote!</p>
-            </div>
-        <div class="unit-container">
-            <div class="unit-header">
-                <h2>Unit Applied for</h2>
-            </div>
-            <div class="model-cont">
-                <div class="model1">
-                    <div class="variant1">
-                        <label for="exampleFormControlSelect1"><strong>Model Variant</strong></label>
-                            <select class="form-select" id="exampleFormControlSelect1">
-                            <option selected>Open this select menu</option>
-                            <option value="1">Ford Mustang</option>
-                            <option value="2">Ford Raptor</option>
-                            <option value="3">Ford Expedition</option>
-
-                        </select>
-                        <label for="exampleFormControlSelect1"><strong>Preferred Loan</strong></label>
-                            <select class="form-select" id="exampleFormControlSelect1">
-                            <option selected>Open this select menu</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            
-                        </select>
-                    </div>
-                    <div class="variant2">
-                        <label for="exampleFormControlSelect1"><strong>Unit Price</strong></label>
-                            <select class="form-select" id="exampleFormControlSelect1">
-                            <option selected>Open this select menu</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-
-
-                        </select>
-                        <label for="exampleFormControlSelect1"><strong>Preferred Loan Duration</strong></label>
-                            <select class="form-select" id="exampleFormControlSelect1">
-                            <option selected>Open this select menu</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                      
-                        </select>
-
-                    </div>
-                </div>
-                <div class="model2">
-                    <div class="model2-variant1">
-                        <label for="exampleFormControlSelect1" style="margin-bottom: 14px;"><strong>Valid IDs</strong></label>
-                        <br>
-                            <select class="form-select" id="exampleFormControlSelect1">
-                            <option selected>Open this select menu</option>
-                            <option value="1">Philippine Identification Card</option>
-                            <option value="2">Driver License</option>
-                            <option value="3">Passport</option>
-                            <option value="4">UMID</option>
-                            <option value="5">SSS</option>
-                        </select>
-                    </div>
-                    <div class="list-id">
-                        <ul>
-                            <li>2 valid IDs</li>
-                            <li>Latest COE with comprehension</li>
-                            <li>Latest ITR</li>
-                            <li>3 months latest payslip</li>
-                            <li>Proof of billing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-<!-- ---------------------------------------------------PERSONAL INFORMATION ---------------------------------------------------- -->
-            <div class="unit-header">
-                <h2>Principal Personal Information</h2>
-            </div>
-            <div class="personalInfo">
-                    <div class="form-group">
-                      <label for="Name">First Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter First Name">
-                    </div>
-                    <div class="form-group" style="padding-left: 30px;">
-                        <label for="Name">Last Name</label>
-                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Last Name">
-                    </div>
-                    <div class="form-group" style="padding-left: 30px;">
-                        <label for="Name">Middle Name</label>
-                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Middle Name">
-                    </div>
-            </div>
-            <div class="personalInfo">
-                <div class="form-group">
-                    <label for="Birthday">Birthday</label>
-                    <input type="date" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Birthday">
-                  </div>
-                  <div class="form-group" style="padding-left: 30px;">
-                    <label for="Birthday">Status</label>
-                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Status">
-                  </div>
-                  <div class="form-group" style="padding-left: 30px;">
-                      <label for="Mobile">Mobile Number</label>
-                      <input type="number" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
-                  </div>
-            </div>
-            <div class="personalInfo">
-                <div class="form-group">
-                    <label for="Email">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Email Address">
-                  </div>
-                  <div class="form-group"  style="padding-left: 30px;">
-                      <label for="Location">Location</label>
-                      <input type="text" class="form-control location" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Location"> 
-                  </div>
-                  <div class="form-group" style="padding-left: 30px;">
-                      <label for="Zip">Zip Code</label>
-                      <input type="number" class="form-control zip" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Zip Code">
-                  </div>
-            </div>
-            <div class="come">
-                <label for="income" style="font-weight: bold;">Source of Income</label>
-                <div class="income">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">Employment</label>
-                  </div>
-                  <div class="form-check" style="padding-left: 120px;">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">Business</label>
-                  </div>
+            <div class="middle">
+                <span>Performance</span>
+                <span class="side">4.9/5</span><br>
+                <h6>Engine Output (HP), Acceleration, Transmission, Handling</h6>
+                <div class="bar-container">
+                    <div class="bar-5"></div>
                 </div>
             </div>
             
-
-
-            <div class="personalInfo" style="padding-top: 20px;">
-                <div class="form-group">
-                    <label for="businessname">Employment/Business Name</label>
-                    <input type="text" class="form-control business" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Employment/Business Name">
-                  </div>
-                  <div class="form-group"  style="padding-left: 40px;">
-                      <label for="address">Address</label>
-                      <input type="text" class="form-control business" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Address"> 
-                  </div>
-            </div>
-
-            <div class="BusinessInfo" style="padding-top: 20px;">
-                <div class="form-group">    
-                    <label for="number">Number</label>
-                    <input type="number" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Employment/Business Name">
-                  </div>
-                  <div class="form-group"  style="padding-left: 31px;">
-                      <label for="designation">Designation</label>
-                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Designation"> 
-                  </div>
-                  <div class="form-group" style="padding-left: 31px;">
-                    <label for="businessname">Length of Stay</label>
-                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Length of Stay">
-                  </div>
-                  <div class="form-group"  style="padding-left: 31px;">
-                      <label for="address">Monthly Income</label>
-                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Monthly Income"> 
-                  </div>
-            </div>
-<!-- ---------------------------------------------------SPOUSE/CO-MAKER INFORMATION---------------------------------------------------- -->
-            <div class="unit-header" style="padding-top: 20px;">
-                <h2>Spouce/Co-Maker Information</h2>
-            </div>
-            <div class="personalInfo">
-                    <div class="form-group">
-                      <label for="Name">First Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter First Name">
-                    </div>
-                    <div class="form-group" style="padding-left: 30px;">
-                        <label for="Name">Last Name</label>
-                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Last Name">
-                    </div>
-                    <div class="form-group" style="padding-left: 30px;">
-                        <label for="Name">Middle Name</label>
-                        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Middle Name">
-                    </div>
-            </div>
-            <div class="personalInfo">
-                <div class="form-group">
-                    <label for="Birthday">Birthday</label>
-                    <input type="date" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Birthday">
-                  </div>
-                  <div class="form-group" style="padding-left: 30px;">
-                      <label for="Status">Status</label>
-                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Status">
-                  </div>
-                  <div class="form-group" style="padding-left: 30px;">
-                      <label for="Mobile">Mobile Number</label>
-                      <input type="number" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
-                  </div>
-            </div>
-            <div class="personalInfo">
-                <div class="form-group">
-                    <label for="Email">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Email Address">
-                  </div>
-                  <div class="form-group"  style="padding-left: 30px;">
-                      <label for="Location">Address</label>
-                      <input type="text" class="form-control comaker" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter Address"> 
-                  </div>
-                  <div class="form-group" style="padding-left: 30px;">
-                      <label for="Zip">Relation to the Principal</label>
-                      <input type="number" class="form-control relation" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Relation to the Principal">
-                  </div>
+            <div class="middle">
+                <span>Design</span>
+                <span class="side">4.9/5</span>
+                <h6>Quality, Exterior and Interior Design</h6>
+                <div class="bar-container">
+                    <div class="bar-4"></div>
+                </div>
             </div>
             
-            <div class="ending">
-            <p>I/We hereby certify that all data and statement in this application are correct, and are made for purpose of obtaining credit and the signatures 
-                appearing hereon are genuine. I authorize you to obtain such information as you may require concerning the statements made in this application and
-                that the source from which you may verify are authorized to provide any information relative to this application. I agree that the application may remain
-                your property whether the credit is granted or not.</p>
+            <div class="middle">
+                <span>Comfort</span>
+                <span class="side">4.9/5</span>
+                <h6>Suspension and Cabin Comfort </h6>
+                <div class="bar-container">
+                    <div class="bar-3"></div>
+                </div>
             </div>
-        </div>
-        <div class="submit">
-        <button class="btn1">Submit</button>
-        <button class="btn2">Cancel</button>
-        </div>
+            
+            
+            <div class="middle">
+                <span>Value</span>
+                <span class="side">4.9/5</span>
+                <h6>Worthy and Quality of the car</h6>
+                <div class="bar-container">
+                    <div class="bar-2"></div>
+                </div>
+            </div>
+            
+            
+            <div class="middle">
+                <span>Safety and Technology</span>
+                <span class="side">4.9/5</span>
+                <h6>Technology Features</h6>
+                <div class="bar-container">
+                    <div class="bar-1"></div>
+                </div>
+            </div>
+                
+          
+
         </div>
     </div>
-    </section>
-	
-	<section class="section4">
 
-       
+    <div>
+        <table id="example1">
+            <tr id="var1st">
+                <th style="border-right: none; padding-left: 30px; padding-right: 150px; font-size: 20px;">Model</th>
+                <th style="border-left: none; font-size: 20px;">Price</th>
+            </tr>
 
-            <div class="motor">
+            <tr class="varC2">
+                <tr>
+                    <td style="color: #003BEC; font-weight: bold;font-size: 20px;">Honda Click 150i<br>
+                        <span style="color: black; font-weight: normal; font-size: 15px;">HONDA - The Power of Dreams</span> </td>
+						
+        
+                    <td style="font-size:20px; font-weight: normal;"> ₱76,900</td>
+                </tr>
+                
+            </tr>
+                <tr>
+					<td style="color: black; font-weight: bold;">Specifications </td>
+                    <td><span style="color: #003BEC; font-weight: bold;">Engine Type / Brake System5 </span><br>4 Stroke, SOHC, Liquid-Cooled, eSP,Hydraulic Disc Brake / Mechanical Leading Trailing<br><br>
+					<span style="color: #003BEC">Seat Height </span><br>769 mm<br><br>
+					<span style="color: #003BEC ">Fuel Capacity (L)</span><br>5.5 L<br><br>
+                    <span style="color: #003BEC ">Displacement (cc)</span><br>150cc<br><br><br>
+                    <span style="color: #003BEC ">Transmission</span><br>Automatic<br><br>
+                    <span style="color: #003BEC ">Front Tire</span><br>90/80 - 14 M/C 43P<br><br>
+					<span style="color: #003BEC ">Wheels Type</span><br>Cast Wheel<br><br>
+					<span style="color: #003BEC ">Starting System</span><br>Electric / DECOMP<br><br>
+					<span style="color: #003BEC ">Rear Tire</span><br>100/80 - 14 M/C 48P<br><br>
+					<span style="color: #003BEC ">Overall Dimensions (lenght x width x height)</span><br>Dimensions (lenght x width x height)1,919 x 679 x 1,062 (mm)<br><br>
+					<span style="color: #003BEC ">Fuel System</span><br>PGM-Fi<br><br>
+					<span style="color: #003BEC ">Headlight</span><br>LED<br><br>
+					<span style="color: #003BEC ">Security System</span><br>Anti-Theft Alarm<br>
+                </tr>
+               
+                <tr>
+                    <td style="color: black; font-weight: bold;">Color</td>
+                    <td ><img src="img/images/color2.png " alt=" "></td>
+                </tr>
+            
+            <tr>
+                <tr>
+                    <td style="border-right: none; " class="specs"><button type="button" class="btn btn-primary">View Full Specs</button></td>
+                </tr>
+            </tr>
+        </table>
+        </div>
+    </div><!--DESCRIPTION-->
+</div> <!--CONT -->
+    
 
-                <div class="content">
-
-                    <div class="cards"><!--card-->
-                        <div class="imgCard">
-                          <div class="star">
-                            <div class="roundStar">
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p class="ratingCard">5.0</p>
-                          </div>
-                          <img
-                            src="./img/pic1.png"
-                            alt="Ford Raptor"
-                            class="imgCardCar"
-                          />
+<!--                     APPLICATION FORM                  -->
+  
+    <section class="appForm">
+        
+        <div>
+            <h1 id="h" style="margin-left: -150px; font-size: 30px;">Ready to Buy? Get Quote!</h1>
+            <h2>Unit Applied for</h2>
+            <form class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="formLeft">
+                    <div class="col-13  ">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Model/Variant* </label>
+                            <select class="form-control form-control-lg">
+                            <option>Select Model</option>
+                          </select>
                         </div>
-                        <p class="titleCards">Honda Genio</p>
-                        <p class="descCards">
-                          Great car with very durable electrical power and <br />
-                          a very modern design.
-                        </p>
-                        <p class="titleCards">$109,145.00</p>
-                        <button class="btnCards">Details</button>
-                      </div><!--card-->
-                      <div class="cards"><!--card-->
-                        <div class="imgCard">
-                          <div class="star">
-                            <div class="roundStar">
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p class="ratingCard">5.0</p>
-                          </div>
-                          <img
-                            src="./img/pic2.png"
-                            alt="Ford Mustang"
-                            class="imgCardCar"
-                          />
+                    </div>
+                    <div class="col-13">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Preffered Loan*</label>
+                            <select class="form-control form-control-lg">
+                            <option>Select</option>
+                          </select>
                         </div>
-                        <p class="titleCards">Suzuki Gixxer 250</p>
-                        <p class="descCards">
-                          A really great speed car with a very light and cool<br />
-                          and powerful engine.
-                        </p>
-                        <p class="titleCards">$109,145.00</p>
-                        <button class="btnCards">Details</button>
-                      </div><!--card-->
-                      <div class="cards"><!--card-->
-                        <div class="imgCard">
-                          <div class="star">
-                            <div class="roundStar">
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p class="ratingCard">5.0</p>
-                          </div>
-                          <img
-                            src="./img/pic3.png"
-                            alt="Ford Mustang"
-                            class="imgCardCar"
-                          />
-                        </div>
-                        <p class="titleCards">Suzuki Gixxer 250</p>
-                        <p class="descCards">
-                          A really great speed car with a very light and cool<br />
-                          and powerful engine.
-                        </p>
-                        <p class="titleCards">$109,145.00</p>
-                        <button class="btnCards">Details</button>
-                      </div><!--card-->
-
+                    </div>
+    
                 </div>
-                <div class="button">
-                    <a href="#" class="viewall">View All</a>
+    
+                <div class="formRight">
+                    <div class="col-13">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Unit Price*</label>
+                            <select class="form-control form-control-lg">
+                                <option>x0000000</option>
+                              </select>
+                        </div>
+                    </div>
+    
+                    <div class="col-13">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Preffered Loan Duration*  </label>
+                            <select class="form-control form-control-lg">
+                                <option>Select</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="reqRight">
+                    <label style="color: #003BEC " class="visually-hidden" for="inlineFormSelectPref">Requirements</label>
+                    <select class="form-control form-control-lg">
+                        <option>Select Status</option>
+                    </select>
+                    <ul id="required">
+                        <li>2 Valid IDs</li>
+                        <li>Latest COE with compensation</li>
+                        <li>Latest ITR</li>
+                        <li>3 months latest payslip</li>
+                        <li>Proof of billing</li>
+                    </ul>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="conttt">
+        <div class="personForm">
+            <h2>Principal Personal Information</h2>
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>First Name*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Last Name*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Middle Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-field">
+                                <label>Birthday*</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Status*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Mobile Number*</label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Email Address*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Location*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Zip Code*</label>
+                                <input type="number" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="income">
+                        <span class="sourceIncome">Source of Income</span>
+                        <input type="radio" name="source" id="dot-1">
+                        <input type="radio" name="source" id="dot-2">
+                        <div class="category">
+                            <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="source">Employment</span>
+                        </label>
+                            <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="source">Business</span>
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="details personal">
+                        <div class="fields1">
+                            <div class="input-field1">
+                                <label>Employment/Business Name*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-field1">
+                                <label>Address*</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details personal">
+                        <div class="fields2">
+                            <div class="input-field2">
+                                <label>Number*</label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input-field2">
+                                <label>Designation</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-field2">
+                                <label>Length of Stay</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-field2">
+                                <label>Monthly Income</label>
+                                <input type="number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <header>Spouse / Co-Maker Information</header>
+                    <div class="form first">
+                        <div class="details personal">
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>First Name*</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Last Name*</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Middle Name</label>
+                                    <input type="text">
+                                </div>
+                                <div class="input-field">
+                                    <label>Birthday*</label>
+                                    <input type="date" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Status*</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Mobile Number*</label>
+                                    <input type="number" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Email Address*</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Address*</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Relation to the Principal:</label>
+                                    <input type="number" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6>I/ We hereby certify that all data and statement in this application are correct, and are made for purpose of obtaining credit and the signatures appearing hereon are genuine. I authorize you to obtain such information as you may require concerning
+                    the statements made in this application and that the source from which you may verify are authorized to provide any information relative to this application. I agree that the application may remain your property whether the credit is granted
+                    or not.</h6>
+                <div class="submitBtn">
+                    <button type="button" a href="#">Submit</button>
+                    <a href="./carsPage.html" class="btn btn-primary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+<!--                POPULAR CARS            -->
+
+    <section class="section3">
+        <div class="cay">
+
+            <p class="firstline">Popular Cars by <em>Model</em></p>
+            <div class="cars1">
+                <div class="container">
+                    <div class="card" style="width: 400px; height: 400px; border-radius: 30px;">
+                        <div class="img-top">
+                            <img class="card-img-top" src="./img/pic1	.png" alt="Honda Genio">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Honda Genio</h5>
+                            <p class="card-text" style="font-size: 12px;">Great car with very durable electrical power and a very modern design.</p>
+
+                            <div class="pricedeets">
+                                <p class="price" style="font-size: 24px; font-weight: bold;">$109,145.00</p>
+                                <a href="./CarAppForm.html" class="btn btn-primary">Details</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 400px; height: 400px; border-radius: 30px; margin-left: 50px;">
+                        <div class="img-top">
+                            <img class="card-img-top" src="./img/pic2.png" alt="Honda Genio">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Suzuki Gixxer 250</h5>
+                            <p class="card-text" style="font-size: 12px;">A really great speed car with a very light and cool and powerful engine.</p>
+
+                            <div class="pricedeets">
+                                <p class="price" style="font-size: 24px; font-weight: bold;">$109,145.00</p>
+                                <a href="#" class="btn btn-primary">Details</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 400px; height: 400px; border-radius: 30px; margin-left: 50px;">
+                        <div class="img-top">
+                            <img class="card-img-top" src="./img/pic2.png" alt="Honda Genio">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Suzuki Gixxer 250</h5>
+                            <p class="card-text" style="font-size: 12px;">Very beautiful color with very professional design with great engine.</p>
+
+                            <div class="pricedeets">
+                                <p class="price" style="font-size: 24px; font-weight: bold;">$109,145.00</p>
+                                <a href="#" class="btn btn-primary">Details</a>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
 
+    <!--            SIGN UP NOW         -->
 
-	<section class="section8">
-        <div class="div1">
+    <section class="page3sec4">
+        <div class="sec4">
             <div>
                 <p class="sign">
                     Sign Up To The <span class="java">Java Auto Motor</span> Newsletter
@@ -579,36 +532,11 @@
                 <input class="email" type="text" placeholder="Your Email Address" />
                 <button class="subscribe">Subscribe</button>
             </div>
-            <img class="car" src="./img/design1.png" alt="Car Design" />
+            <img class="car" src="img/images/design1.png" alt="Car Design" />
         </div>
     </section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-     <footer>
+    <footer>
         <div class="footer-container">
             <div class="header-container">
                 <h2>Buy your desired vehicle at a <br> very low easy payment scheme</h2>
@@ -620,7 +548,7 @@
             <div class="navigation-container">
                 <div class="logo-contain">
                     <div class="logo-main">
-                        <img src="./img/Logo Design 2 2.png" alt="">
+                        <img src="img/images/Logo Design 2 2.png" alt="">
                         <h3>JAVA AUTO MOTORS</h3>
                     </div>
 
@@ -700,4 +628,5 @@
 
     </footer>
 </body>
+
 </html>
