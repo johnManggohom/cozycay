@@ -795,7 +795,10 @@ flex-direction: column;
 }
 .img_cont {
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .dahon {
