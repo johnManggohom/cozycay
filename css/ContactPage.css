@@ -9,13 +9,21 @@ body {
   scroll-behavior: smooth;
 }
 
+.secCont1{
+  height: 802px;
+  width: 100%;
+}
+
+.secCont2{
+width: 100%;
+height: 1000px;
+}
+
 .divide3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 55px;
   gap: 130px;
-  margin-bottom: 60px;
 }
 .page5img1 {
   width: 582px;
