@@ -77,3 +77,50 @@
     display: none;
   }
 }
+@media (max-width: 403px) {
+  .container11 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+  }
+  .container14 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -80px;
+  }
+  .entemail {
+    width: 300px;
+    height: 60px;
+    margin-left: 19px;
+  }
+  .intpass {
+    width: 300px;
+    height: 60px;
+    margin-left: 19px;
+  }
+  .entpass {
+    height: 40px;
+  }
+  .container16 p {
+    margin-left: 23px;
+  }
+  .container17 input {
+    width: 300px;
+    margin-left: 20px;
+  }
+  .container18 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container19 {
+    margin-left: -4px;
+  }
+  .container20 {
+    margin-left: 50px;
+  }
+  .container18 span {
+    display: none;
+  }
+}

@@ -78,3 +78,51 @@
     margin-left: 50px;
   }
 }
+@media (max-width: 455px) {
+  .container11 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+  }
+  .container14 {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .entemail {
+    width: 300px;
+    height: 60px;
+    margin-left: 50px;
+  }
+  .intpass {
+    width: 300px;
+    height: 60px;
+    margin-left: 50px;
+  }
+  .entpass {
+    height: 40px;
+  }
+  .container16 p {
+    margin-left: 56px;
+  }
+  .container17 input {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .container18 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container19 {
+    margin-left: -4px;
+  }
+  .container20 {
+    margin-left: 50px;
+  }
+  .container18 span {
+    display: none;
+  }
+}
