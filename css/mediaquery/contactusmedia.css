@@ -1,0 +1,169 @@
+@media (max-width:1280px) {
+    .divide3{
+        gap: 20px;
+    }
+
+    .page5img1{
+        width: 360px;
+        height: 324px;
+    }
+}
+
+@media (max-width:1200px) {
+    .bgg1{
+        gap: 25px;
+    }
+
+    .maincontt{
+        width: 460px;
+    }
+
+    iframe{
+        width: 415px;
+        height: 390px;
+    }
+    .loca{
+        width: 390px;
+    }
+}
+
+@media (max-width:970px) {
+    .secCont1{
+        height: auto;
+        width: 100%;
+      }
+   .divide3{
+  
+    flex-direction: column;
+   }
+
+   .divide2{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+   }
+
+   .page5img1{
+    margin-top: 75px;
+   }
+
+   .secCont2{
+    height: auto;
+    width: 100%;
+  }
+
+   .bgg1{
+    flex-direction: column;
+    height: 800px;
+    }
+
+    .bgg2{
+        height: 500px;
+    }
+    .maincontt{
+        margin-top: 420px;
+        padding: 20px 10px;
+    }
+
+    .maincont2{
+        margin-top: -36px;
+    }
+}
+
+
+@media (max-width:650px) {
+    .lore1{
+        width:330px;
+    }
+}
+
+@media (max-width:500px) {
+    .maincontt{
+        width: 407px;
+        align-items: start;
+    }
+    .subdiv1{
+        flex-direction: column;
+    }
+    .lname{
+        width: 385px;
+    }
+    .fname{
+        width: 385px;
+    }
+    .sendmess1{
+        width: 380px;
+    }
+
+    .messy{
+        width: 385px;
+    }
+
+    .embut{
+        width: 385px;
+    }
+
+    .bgg1{
+        height: 950px;
+    }
+}
+
+@media (max-width:420px) {
+    .page5img1{
+        width: 328px;
+        height: 260px;
+    }
+
+    .conta1{
+        font-size: 50px;
+    }
+    .lore1{
+        width: 285px;
+    }
+    .maincont2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        width: 333px;
+    }
+    .loca{
+        width: 345px;
+    }
+
+    .maincontt{
+        width: 350px;
+    }
+
+    .help{
+        font-size: 30px;
+        width: 320px;
+    }
+
+    .lname{
+        width: 326px;
+    }
+    .fname{
+        width: 326px;
+    }
+    .sendmess1{
+        width: 320px;
+    }
+
+    .messy{
+        width: 326px;
+    }
+
+    .embut{
+        width: 326px;
+    }
+}
+
+@media (max-width:350px) {
+    .page5img1{
+        width: 293px;
+        height: 260px;
+    }
+}
