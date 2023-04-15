@@ -452,6 +452,29 @@
   }
 }
 
+@media (max-width:430px){
+  .section1 .first-bg{
+    gap: 100px;
+  }
+  .first-bg .logo1{
+    width:302px;
+    height: 301px;
+  }
+
+  .cars1 .cards{
+    width: 342px !important;
+  }
+  .motor-main .card{
+    width: 342px !important;
+  }
+
+  .contentH1 .thirdline{
+    width: 404px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
 @media (max-width:400px) {
   .first-bg .logo1{
     width: 375px;
@@ -502,7 +525,7 @@
   }
 
   .contentH1 .thirdline{
-    width: 255px;
+    width: 388px;
   }
 
   .cars1 .cards{
@@ -523,4 +546,13 @@
   
 }
 
+@media (max-width:375px){
 
+  .first-bg .logo1{
+    width: 342px;
+  }
+  .contentH1 .thirdline{
+    width: 352px;
+    font-size: 12px;
+  }
+}
