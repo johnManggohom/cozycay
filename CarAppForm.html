@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Project</title>
 
+
     <link rel="stylesheet" href="css/carApp.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/mediaquery/stylemedia.css">
 
     <!-- Google APi Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,16 +30,16 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <!--Logo-->
         <div class="brand">
             <img src="./img/Logo Design 2 2.png" alt="logo">
         </div>
         <!--Tabs-->
-        <nav class="header-nav">
-            <ul class="nav-menu">
+        <nav class="header-nav" id="header-nav">
+            <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="./index.html">Home</a>
+                    <a href="#" class="active">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="./carsPage.html">Cars</a>
@@ -51,12 +54,30 @@
                     <a href="./ContactPage.html">Contact Us</a>
                 </li>
             </ul>
+
+            <div class="btn-login" id="btn-login">
+                <a href="SignIn.html">Login</a>
+            </div>
+            
         </nav>
 
-        <div class="btn-login">
-            <a href="SignIn.html">Login</a>
+        <div class="ham">
+            <i class="bi bi-list" id="hamList" onclick="OpenHam()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </i>
+            <i class="bi bi-x-lg" id="hamX" onclick="CloseHam()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </i>
         </div>
-    </header>
+   
+    </header>  
+    
+    <div></div>
+
 
 
     <!--                    CAROUSEL                   -->
@@ -105,14 +126,24 @@
 <div class="cont">
     <div class="descc">
 
-    <div>
-        <span id="h"> Honda BR-V 2022</span>
-        <input class="searchBar" type="text"  onkeyup="myFunction()" placeholder="Search Brand or Model" title="Type in a category">
+    <div class="car-form-header">
+        
+        <div class="searchBar">
+        <input class="search-bar-input" type="text"  onkeyup="myFunction()" placeholder="Search Brand or Model" title="Type in a category">
+         </div>
+
+         <div>
+         <h1 id="h"> Honda BR-V 2022</h1>
+         </div>
+          
     </div>
 
        
     <!--                 RATING           -->
-    <div class="desc">
+
+    <div class="car-form-details" >
+
+          <div class="desc">
         <p>The Honda BR-V is Honda Cars Philippines, Inc. (HCPI)'s entry into the competitive sporty-looking MPV market. Although it has the characteristics of a crossover with its bold and beefy exterior, it still is technically an MPV. However, its major
             advantage against the competitors in crossover class is the number of occupants it can accommodate- 7 to be exact. Its recent update also elevated the BR-V's appeal to discerning Filipino car buyers.
             <br> <br> The Honda BR-V entered the Philippine automotive market in September 2016, showcased by the brand at the Philippine International Motor Show. It’s the first of its class— the bold-looking MPVs that aim to appeal as an SUV as it invokes
@@ -125,9 +156,15 @@
 
 
         <div class="rating">
-            <div>
+          
+           
+            <div class="rating-header">
+
+          
                 <span class="heading">Overall Rating</span>
                 
+                
+                <div class="rating-star">
                 <div class="side starpadding">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -135,19 +172,12 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                 </div>
-                <span class="side">4.9/5.0</span>
-            </div>
-  
-            <div class="middle">
-                <span>Performance</span>
-                <span class="side">4.9/5</span><br>
-                <h6>Engine Output (HP), Acceleration, Transmission, Handling</h6>
-                <div class="bar-container">
-                    <div class="bar-5"></div>
+                <div class="side">4.9/5.0 <p></p> </div>
                 </div>
-            </div>
-            
-            <div class="middle">
+
+                  </div>
+
+                    <div class="middle">
                 <span>Design</span>
                 <span class="side">4.9/5</span>
                 <h6>Quality, Exterior and Interior Design</h6>
@@ -155,8 +185,8 @@
                     <div class="bar-4"></div>
                 </div>
             </div>
-            
-            <div class="middle">
+
+             <div class="middle">
                 <span>Comfort</span>
                 <span class="side">4.9/5</span>
                 <h6>Suspension and Cabin Comfort </h6>
@@ -184,25 +214,32 @@
                     <div class="bar-1"></div>
                 </div>
             </div>
+
+            </div>
+  
+            
+            
+          
+            
+           
                 
           
 
         </div>
-    </div>
 
-    <div>
-        <table id="example1">
+         <div class="desc-2" >
+        <table id="example1" >
             <tr id="var1st">
-                <th style="border-right: none; padding-left: 30px; padding-right: 150px; font-size: 20px;">Variants</th>
+                <th class="table-variants">Variants</th>
                 <th style="border-left: none; font-size: 20px;">Price</th>
             </tr>
 
             <tr class="varC2">
                 <tr>
-                    <td style="color: #003BEC; font-weight: bold;font-size: 20px;">Honda BR-V 1.5 S CVT <br>
-                        <span style="color: black; font-weight: normal; font-size: 15px;">CVT Gasoline</span> </td>
+                    <td class="name-blue">Honda BR-V 1.5 S CVT <br>
+                        <span class="span-gasoline"  >CVT Gasoline</span> </td>
         
-                    <td style="font-size:20px; font-weight: normal;"> ₱1,058,000</td>
+                    <td class="table-price" > ₱1,058,000</td>
                 </tr>
                 
             </tr>
@@ -220,16 +257,16 @@
                 <tr id="end" style="border-bottom: 5px;">
                     <td style="color: black; font-weight: bold;">Color</td>
                     <td><img src="img/images/color.png" alt=""></td>
-                </tr>s
+                </tr>
             <tr id="var2nd">
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <tr>
-                    <td style="color: #003BEC; font-weight: bold;font-size: 20px;">Honda BR-V 1.5 V CVT <br> 
-                        <span style="color: black; font-weight: normal; font-size: 15px;">CVT Gasoline</span></td>
-                    <td style="font-size:20px; font-weight: normal;">₱1,168,000</td>
+                    <td class="name-blue">Honda BR-V 1.5 V CVT <br> 
+                        <span class="span-gasoline">CVT Gasoline</span></td>
+                    <td  class="table-price">₱1,168,000</td>
                 </tr>
                 <tr>
                     <td style="color: black; font-weight: bold;">Key Specs </td>
@@ -254,8 +291,18 @@
             </tr>
         </table>
         </div>
-    </div><!--DESCRIPTION-->
-</div> <!--CONT -->
+    </div>
+
+   
+
+    </div>
+  
+    </div>
+    
+    <!--DESCRIPTION-->
+
+
+<!--CONT -->
     
 
 <!--                     APPLICATION FORM                  -->
@@ -322,7 +369,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> 
 
     <section class="conttt">
         <div class="personForm">
@@ -467,17 +514,17 @@
                 <h6>I/ We hereby certify that all data and statement in this application are correct, and are made for purpose of obtaining credit and the signatures appearing hereon are genuine. I authorize you to obtain such information as you may require concerning
                     the statements made in this application and that the source from which you may verify are authorized to provide any information relative to this application. I agree that the application may remain your property whether the credit is granted
                     or not.</h6>
-                <div class="submitBtn">
+                 <div class="submitBtn">
                     <button type="button" a href="#">Submit</button>
                     <a href="./carsPage.html" class="btn btn-primary">Cancel</a>
                 </div>
             </form>
         </div>
-    </section>
+    </section> 
 
 <!--                POPULAR CARS            -->
 
-    <section class="section3">
+     <section class="section3">
         <div class="cay">
 
             <p class="firstline">Popular Cars by <em>Model</em></p>
@@ -538,9 +585,9 @@
 
     <!--            SIGN UP NOW         -->
 
-    <section class="page3sec4">
-        <div class="sec4">
-            <div>
+<section class="page3sec4" style="width: 60%; margin: 0 auto;">
+        <div class="sec4" style="margin:200px 0">
+            <div style="width: 60%;">
                 <p class="sign">
                     Sign Up To The <span class="java">Java Auto Motor</span> Newsletter
                 </p>
@@ -550,11 +597,18 @@
                 <input class="email" type="text" placeholder="Your Email Address" />
                 <button class="subscribe">Subscribe</button>
             </div>
-            <img class="car" src="img/images/design1.png" alt="Car Design" />
+
+            <div class="car" style="position: relative; " >
+                <div class="car-img" style="position: absolute; left: -40%; top: 15%;">
+                    <img  src="img/images/design1.png" alt="Car Design" />
+                </div>
+                
+            </div>
+            
         </div>
     </section>
 
-    <footer>
+   <footer>
         <div class="footer-container">
             <div class="header-container">
                 <h2>Buy your desired vehicle at a <br> very low easy payment scheme</h2>
@@ -644,7 +698,15 @@
             </div>
         </div>
 
-    </footer>
+    </footer> 
+
+        <script src="./js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e460786ef.js" crossorigin="anonymous"></script>
 
 </body>
 
