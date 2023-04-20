@@ -1,900 +1,1270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Java Motorcycle</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/motor.css">
-    <link rel="stylesheet" href="./css/mediaquery/motorquery.css">
-    <link rel="stylesheet" href="./css/mediaquery/stylemedia.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/motor.css" />
+    <link rel="stylesheet" href="./css/mediaquery/motorquery.css" />
+    <link rel="stylesheet" href="./css/mediaquery/stylemedia.css" />
 
     <!-- Google APi Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
-<body>
-
-  <header id="header">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="header">
       <!--Logo-->
       <div class="brand">
-          <img src="./img/Logo Design 2 2.png" alt="logo">
+        <img src="./img/Logo Design 2 2.png" alt="logo" />
       </div>
       <!--Tabs-->
       <nav class="header-nav" id="header-nav">
-          <ul class="nav-menu" id="nav-menu">
-              <li class="nav-item">
-                  <a href="./index.html" >Home</a>
-              </li>
-              <li class="nav-item">
-                  <a href="./carsPage.html">Cars</a>
-              </li>
-              <li class="nav-item">
-                  <a href="./MotorPage.html" class="active">Motorcycles</a>
-              </li>
-              <li class="nav-item">
-                  <a href="./aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                  <a href="./ContactPage.html">Contact Us</a>
-              </li>
-          </ul>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./carsPage.html">Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="./MotorPage.html" class="active">Motorcycles</a>
+          </li>
+          <li class="nav-item">
+            <a href="./aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./ContactPage.html">Contact Us</a>
+          </li>
+        </ul>
 
-          <div class="btn-login" id="btn-login">
-              <a href="SignIn.html">Login</a>
-          </div>     
+        <div class="btn-login" id="btn-login">
+          <a href="SignIn.html">Login</a>
+        </div>
       </nav>
 
       <div class="ham">
-          <i class="bi bi-list" id="hamList" onclick="OpenHam()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-          </i>
-          <i class="bi bi-x-lg" id="hamX" onclick="CloseHam()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                </svg>
-          </i>
+        <i class="bi bi-list" id="hamList" onclick="OpenHam()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="50"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </i>
+        <i class="bi bi-x-lg" id="hamX" onclick="CloseHam()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="40"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </i>
       </div>
-
-  </header>   
+    </header>
 
     <section class="motorSection1">
-        <div class="calculator-container">
-            <div class="bg-motors">
-                <div class="calc-header">
-                    <h2>Java Auto Motor <span style="color: #003BEC">Car Program Calculator</span></h2>
-                </div>
-                <div class="calc-main">
-                    
-                    <div class="option-container">
-                        <h3>Estimated Program Payment</h3>
-                        <div class="selection-contain">
+      <div class="calculator-container">
+        <div class="bg-motors">
+          <div class="calc-header">
+            <h2>
+              Java Auto Motor
+              <span style="color: #003bec">Car Program Calculator</span>
+            </h2>
+          </div>
+          <div class="calc-main">
+            <div class="option-container">
+              <h3>Estimated Program Payment</h3>
+              <div class="selection-contain">
+                <label for="floatingSelect">Select Vehicle</label>
 
-                            <label for="floatingSelect">Select Vehicle</label>
-
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                  <option selected>Open this select menu</option>
-                                  <option value="1">Suzuki</option>
-                                  <option value="2">Honda</option>
-                                  <option value="3">Yamaha</option>
-                                  <option value="3">Kawasaki</option>
-                                </select>
-                                
-                            </div>
-
-                            <div class="row g-2">
-                                <div class="col-md">
-                                  <label for="floatingInputGrid">SRP</label>
-                                  <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingInputGrid" >
-                                    
-                                  </div>
-                                </div>
-                                <div class="col-md">
-                                  <div class="form-floating">
-                                    <label for="floatingInputGrid">Terms</label>
-                                  <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingInputGrid">
-                                    
-                                  </div>
-                                  </div>
-                                </div>                   
-                            
-                            </div>
-
-                            <label for="floatingSelect">Dealer's Percentage Downpayment</label>
-
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                  <option selected>Open this select menu</option>
-                                  <option value="1">Suzuki</option>
-                                  <option value="2">Honda</option>
-                                  <option value="3">Yamaha</option>
-                                  <option value="3">Kawasaki</option>
-                                </select>
-                                
-                            </div>
-
-                            <label for="floatingSelect">Dealer's Percentage Downpayment</label>
-
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                  <option selected>Open this select menu</option>
-                                  <option value="1">Suzuki</option>
-                                  <option value="2">Honda</option>
-                                  <option value="3">Yamaha</option>
-                                  <option value="3">Kawasaki</option>
-                                </select>
-                                
-                            </div>
-
-                        </div>
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">Suzuki</option>
+                    <option value="2">Honda</option>
+                    <option value="3">Yamaha</option>
+                    <option value="3">Kawasaki</option>
+                  </select>
                 </div>
 
-                <div class="plan-container">
-                    <h1>Select Vehicle</h1> 
-                    <p>The calculator will help you determine the estimated monthly payments for your desired car loan.
-                        Please visit our branch to get a final computation.</p>
-                    <a href="#" class="btnPlan">Create Your Plan</a>
-                </div>         
+                <div class="row g-2">
+                  <div class="col-md">
+                    <label for="floatingInputGrid">SRP</label>
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInputGrid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <label for="floatingInputGrid">Terms</label>
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="floatingInputGrid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <label for="floatingSelect"
+                  >Dealer's Percentage Downpayment</label
+                >
+
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">Suzuki</option>
+                    <option value="2">Honda</option>
+                    <option value="3">Yamaha</option>
+                    <option value="3">Kawasaki</option>
+                  </select>
+                </div>
+
+                <label for="floatingSelect"
+                  >Dealer's Percentage Downpayment</label
+                >
+
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">Suzuki</option>
+                    <option value="2">Honda</option>
+                    <option value="3">Yamaha</option>
+                    <option value="3">Kawasaki</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            
-         </div>
 
-           
-            <div class="small-space">
-                <div class="container-text1">
-                    <p class="headText"> <span>Popular</span> cars & Motorcycle
-                        <br> Great and fast</p>
-                    <p>There are many choices of very cool cars from various famous brands in the world.
-                        This week there are a lot of really cool and cheap cars</p>
-                </div>
+            <div class="plan-container">
+              <h1>Select Vehicle</h1>
+              <p>
+                The calculator will help you determine the estimated monthly
+                payments for your desired car loan. Please visit our branch to
+                get a final computation.
+              </p>
+              <a href="#" class="btnPlan">Create Your Plan</a>
             </div>
+          </div>
         </div>
+
+        <div class="small-space">
+          <div class="container-text1">
+            <p class="headText">
+              <span>Popular</span> cars & Motorcycle <br />
+              Great and fast
+            </p>
+            <p>
+              There are many choices of very cool cars from various famous
+              brands in the world. This week there are a lot of really cool and
+              cheap cars
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="motorSection2">
-        <div class="bg-contain">
-            <div class="header-search">
-                <div class="motors-nav" id="motors-nav">
-                    <nav class="nav-motors">
-                        <ul class="nav-menu1">
-                            <li class="nav-item1">
-                                    <a href="#" >All</a>            
-                                
-                            </li>
-                            <li class="nav-item1">
-                                <a href="#">Honda</a>
-                            </li>
-                            <li class="nav-item1">
-                                <a href="#">Yamaha</a>
-                            </li>
-                            <li class="nav-item1">
-                                <a href="#">Kawasaki</a>
-                            </li>
-                            <li class="nav-item1">
-                                <a href="#">Suzuki</a>
-                            </li>
-                            <li class="nav-item1">
-                                <a href="#">Ducati</a>
-                            </li>
-                        </ul> 
-                    </nav>
-
-                                
-                </div>
-
-                <i class="bi bi-filter" id="filter" onclick="OpenMotors()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
-                    <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-                </i>
-                
-                <i class="bi bi-align-start" id="aligner" onclick="CloseMotors()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-align-start" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
-                    <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7z"/>
-                  </svg>
-                </i>
-
-                <div class="search-container">
-                    <a href="#" target="_blank">
-                        <i class="fa fa-search" title="Search" ></i>                             
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="motor-main">
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic1.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Honda Genio</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                    
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic2.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>                      
-                    </div>
-                </div>
-
-                <div class="card" style="width: 384px; height: 450px; border-radius: 25px;">
-                  <div class="img-top">
-                    
-                    <img src="./img/pic3.png" class="card-img-top" alt="..." style="height:239px; border-top-right-radius: 25px; border-top-left-radius: 25px;">
-                    
-                    <div class="stars">
-                      <div class="yel"><i class="fa fa-star"></i></div>
-                      <h4>5.0</h4>
-                    </div>
-                  </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Ford Raptor</h5>
-                      <p class="card-text">Great car with very durable electrical power and a very modern design.</p>
-                      
-                      <div class="price-btn">
-
-                        <h3>$109,145.00</h3>
-
-                        <a href="#" class="btn btn-primary">Details</a>
-
-                      </div>              
-                    </div>
-                </div>
-            </div>
-            
-            
+      <div class="bg-contain">
+        <div class="header-search">
+          <div class="motors-nav" id="motors-nav">
+            <nav class="nav-motors">
+              <ul class="nav-menu1">
+                <li class="nav-item1">
+                  <a href="#">All</a>
+                </li>
+                <li class="nav-item1">
+                  <a href="#">Honda</a>
+                </li>
+                <li class="nav-item1">
+                  <a href="#">Yamaha</a>
+                </li>
+                <li class="nav-item1">
+                  <a href="#">Kawasaki</a>
+                </li>
+                <li class="nav-item1">
+                  <a href="#">Suzuki</a>
+                </li>
+                <li class="nav-item1">
+                  <a href="#">Ducati</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <i class="bi bi-filter" id="filter" onclick="OpenMotors()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-filter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </i>
+
+          <i class="bi bi-align-start" id="aligner" onclick="CloseMotors()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-align-start"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7z"
+              />
+            </svg>
+          </i>
+
+          <div class="search-container">
+            <a href="#" target="_blank">
+              <i class="fa fa-search" title="Search"></i>
+            </a>
+          </div>
         </div>
+
+        <div class="motor-main">
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic1.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Honda Genio</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic2.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="width: 384px; height: 450px; border-radius: 25px"
+          >
+            <div class="img-top">
+              <img
+                src="./img/pic3.png"
+                class="card-img-top"
+                alt="..."
+                style="
+                  height: 239px;
+                  border-top-right-radius: 25px;
+                  border-top-left-radius: 25px;
+                "
+              />
+
+              <div class="stars">
+                <div class="yel"><i class="fa fa-star"></i></div>
+                <h4>5.0</h4>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Raptor</h5>
+              <p class="card-text">
+                Great car with very durable electrical power and a very modern
+                design.
+              </p>
+
+              <div class="price-btn">
+                <h3>$109,145.00</h3>
+
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section8">
-
-        
       <div class="container8">
-          <p class="header8">Sign Up To The <span class="java">Java Auto Motor</span> Newsletter</p>
-          <p class="descText">
-              Do you want to be the first to know about the latest automotive deals? Just subscribe with your email address and we’ll send you alerts on the most incredible deals as they happen.
-          </p>
-          
-          <div class="subscribeI">
-              <input class="email" type="text" placeholder="Your Email Address" />
-          
-              <button class="subscribe">Subscribe</button>
-          </div>
-          
+        <p class="header8">
+          Sign Up To The <span class="java">Java Auto Motor</span> Newsletter
+        </p>
+        <p class="descText">
+          Do you want to be the first to know about the latest automotive deals?
+          Just subscribe with your email address and we’ll send you alerts on
+          the most incredible deals as they happen.
+        </p>
 
+        <div class="subscribeI">
+          <input class="email" type="text" placeholder="Your Email Address" />
+
+          <button class="subscribe">Subscribe</button>
+        </div>
       </div>
 
-          <img class="car" src="./img/design1.png" alt="Car Design" />
+      <img class="car" src="./img/design1.png" alt="Car Design" />
     </section>
-
 
     <footer>
       <div class="footer-container">
-          <div class="header-container">
-              <h2>Buy your desired vehicle at a <br> very low easy payment scheme</h2>
-              <p>Get a free pouch from us for every purchase of at least $900.00 and don't forget to subscribe again</p>
-              <div class="sub-btn">
-                  <a href="#" class="subcribe-btn">Subcribe</a>
-              </div>
+        <div class="header-container">
+          <h2>
+            Buy your desired vehicle at a <br />
+            very low easy payment scheme
+          </h2>
+          <p>
+            Get a free pouch from us for every purchase of at least $900.00 and
+            don't forget to subscribe again
+          </p>
+          <div class="sub-btn">
+            <a href="#" class="subcribe-btn">Subcribe</a>
           </div>
-          <div class="navigation-container">
-              <div class="logo-contain">
-                  <div class="logo-main">
-                      <img src="./img/Logo Design 2 2.png" alt="">
-                      <h3>JAVA AUTO MOTORS</h3>
-                  </div>
+        </div>
+        <div class="navigation-container">
+          <div class="logo-contain">
+            <div class="logo-main">
+              <img src="./img/Logo Design 2 2.png" alt="" />
+              <h3>JAVA AUTO MOTORS</h3>
+            </div>
 
-                  <p>A place to change all your hair styles at a very cheap and great price</p>
-              </div>
-
-              <div class="list-mode">
-                  <div class="categ-contain">
-
-                      <h3>Categories</h3>
-
-                      <ul>
-                          <li><a href="./index.html">Home</a></li>
-                          <li><a href="./carsPage.html">Cars</a></li>
-                          <li><a href="./MotorPage.html">Motorcycle</a></li>
-                          <li><a href="./aboutus.html">About Us</a></li>
-                      </ul>
-                  </div>
-
-                  <div class="contact-contain">
-
-                      <h3>Contact us</h3>
-
-                      <ul>
-                          <li><a href="#">Get A Quote</a></li>
-                          <li><a href="#">Customer Services</a></li>
-                      </ul>
-                  </div>
-
-                  <div class="getin-contain">
-
-                      <h3>Get in touch</h3>
-
-                      <ul>
-                          <li><a href="#">09760577462</a></li>
-                          <li>
-                              <p>Unit-14 J, Jenkinsen Tower, No. 80 Timog Avenue,Brgy Sacred Heart Quezon City</p>
-                          </li>
-                      </ul>
-
-
-                      <div class="socials">
-                          <ul class="soc-menu">
-                              <li class="soc-item">
-                                  <a href="#" target="_blank">
-                                      <i class="fa fa-facebook" title="Facebook"></i>
-                                  </a>
-                              </li>
-                              <li class="soc-item">
-                                  <a href="#" target="_blank">
-                                      <i class="fa fa-twitter" title="Twitter"></i>
-                                  </a>
-                              </li>
-                              <li class="soc-item">
-
-                                  <a href="#" target="_blank">
-
-                                      <i class="bi bi-tiktok" title="Tiktok"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16"> 
-<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/> 
-</svg></i>
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
-
-                  </div>
-              </div>
-
+            <p>
+              A place to change all your hair styles at a very cheap and great
+              price
+            </p>
           </div>
-          <div class="terms-container">
+
+          <div class="list-mode">
+            <div class="categ-contain">
+              <h3>Categories</h3>
+
               <ul>
-                  <li><a href="#">Terms & Condition</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./carsPage.html">Cars</a></li>
+                <li><a href="./MotorPage.html">Motorcycle</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
               </ul>
+            </div>
+
+            <div class="contact-contain">
+              <h3>Contact us</h3>
+
+              <ul>
+                <li><a href="#">Get A Quote</a></li>
+                <li><a href="#">Customer Services</a></li>
+              </ul>
+            </div>
+
+            <div class="getin-contain">
+              <h3>Get in touch</h3>
+
+              <ul>
+                <li><a href="#">09760577462</a></li>
+                <li>
+                  <p>
+                    Unit-14 J, Jenkinsen Tower, No. 80 Timog Avenue,Brgy Sacred
+                    Heart Quezon City
+                  </p>
+                </li>
+              </ul>
+
+              <div class="socials">
+                <ul class="soc-menu">
+                  <li class="soc-item">
+                    <a href="#" target="_blank">
+                      <i class="fa fa-facebook" title="Facebook"></i>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="#" target="_blank">
+                      <i class="fa fa-twitter" title="Twitter"></i>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="#" target="_blank">
+                      <i class="bi bi-tiktok" title="Tiktok"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-tiktok"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                          /></svg
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="terms-container">
+          <ul>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
       </div>
+    </footer>
 
-  </footer>
-
-<script src="./js/index.js"></script>
-<script src="./js/motor.js"></script>
-    
-</body>
+    <script src="./js/index.js"></script>
+    <script src="./js/motor.js"></script>
+  </body>
 </html>

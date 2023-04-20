@@ -6,7 +6,7 @@
 }
 body {
   scroll-behavior: smooth;
-  background: url("../img/motors/pexels-rangga-aditya-armien-235222\ 2.png");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -112,20 +112,19 @@ header img {
 /* --------------------------Intro Section-------------------------------- */
 
 /* First Section */
-.section1{
+.section1 {
   margin: 0;
   padding: 0;
   width: 100%;
-
 }
 
 /* First Image section where logo and cars is found */
-.section1 .first-bg{
+.section1 .first-bg {
   width: 100%;
   height: 667px;
-  background: url('../img/bg1.jpg');
+  background: url("../img/bg1.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
@@ -134,35 +133,32 @@ header img {
 }
 
 /* Logo and Cars Image */
-.first-bg .logo1{
+.first-bg .logo1 {
   width: 705px;
   height: 544px;
 
   margin-top: 190px;
   margin-bottom: 220px;
-
-
 }
 
-.first-bg .cars1{
+.first-bg .cars1 {
   width: 1347px;
   height: 450px;
 
   margin-top: -445px;
   background: transparent;
-  
 }
 
-.section1 .second-bg{
+.section1 .second-bg {
   width: 100%;
   height: 534px;
-  background: url('../img/bg2.png');
+  background: url("../img/bg2.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 /* Container for text */
-.second-bg .container1{
+.second-bg .container1 {
   display: flex;
   flex-direction: column;
 
@@ -173,22 +169,20 @@ header img {
   gap: 20px;
 }
 
-.header-text h1{
+.header-text h1 {
   font-size: 80px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-
 }
 
-.header-text .colored-text{
+.header-text .colored-text {
   margin-top: -30px;
-  color: #0038FF;
+  color: #0038ff;
   font-weight: bold;
-
 }
 
-.header-info p{
-  font-family: 'Montserrat', sans-serif;
+.header-info p {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   width: 631px;
 
@@ -196,48 +190,48 @@ header img {
 }
 
 /* Buttons in first section */
-.section-btn{
-  font-family: 'Montserrat', sans-serif;
+.section-btn {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   gap: 20px;
 }
 
-.right-btn{
+.right-btn {
   width: 177px;
   height: 52px;
 
-  background: linear-gradient(111.69deg, #0038FF 0%, #00D1FF 109.3%);
-  
+  background: linear-gradient(111.69deg, #0038ff 0%, #00d1ff 109.3%);
+
   border: none;
   border-radius: 50px;
   font-size: 18px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.4s ease-in;
 }
 
-.right-btn:hover{
+.right-btn:hover {
   background: transparent;
-  border: 2px solid #0038FF;
-  color: #0038FF;
+  border: 2px solid #0038ff;
+  color: #0038ff;
 }
 
-.left-btn{
+.left-btn {
   width: 210px;
   height: 52px;
 
-  border: 2px solid #0038FF;
+  border: 2px solid #0038ff;
   background: transparent;
   font-size: 18px;
   font-weight: 700;
-  color: #0038FF;
+  color: #0038ff;
   border-radius: 50px;
   transition: 0.4s ease-out;
 }
 
-.left-btn:hover{
-  background: linear-gradient(111.69deg, #0038FF 0%, #00D1FF 109.3%);
-  color: #FFFFFF;
+.left-btn:hover {
+  background: linear-gradient(111.69deg, #0038ff 0%, #00d1ff 109.3%);
+  color: #ffffff;
   border: none;
 }
 
@@ -250,7 +244,7 @@ header img {
   height: 643px;
 }
 
-.how1{
+.how1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,87 +252,76 @@ header img {
   margin-top: 20px;
 }
 
-.numberI{
+.numberI {
   width: 50px;
   height: 50px;
   border-radius: 50px;
   background: #003bec;
   text-align: center;
   color: white;
-  padding:10px 0 0 0;
+  padding: 10px 0 0 0;
   font-size: 24px;
 }
 
-.how1 img{
+.how1 img {
   width: 302px;
   height: 241px;
 }
 
-.howContainer{
+.howContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-
-
-.howContainer p{
+.howContainer p {
   font-size: 20px;
   width: 297px;
   text-align: center;
   opacity: 0.8;
 }
 
-
-.howContainer2{
+.howContainer2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-
-.howContainer2 p{
+.howContainer2 p {
   width: 526px;
-text-align: left;
-opacity: 0.8;
+  text-align: left;
+  opacity: 0.8;
 }
 
-
-.howContainer3{
+.howContainer3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-
-.howContainer3 p{
+.howContainer3 p {
   width: 526px;
   opacity: 0.8;
 }
 
-
-.howContainer4{
+.howContainer4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-
-.howContainer4 p{
+.howContainer4 p {
   width: 480px;
   opacity: 0.8;
 }
 
-
-.carousel-indicators{
+.carousel-indicators {
   bottom: -45px !important;
 }
-
-
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
@@ -403,10 +386,10 @@ opacity: 0.8;
   align-items: center;
 }
 
-.contentH1{
-display: flex;
-text-align: center;
-flex-direction: column;
+.contentH1 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 
 .contentH1 .firstline {
@@ -436,7 +419,6 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 .cars1 .container1 {
   display: flex;
@@ -445,7 +427,6 @@ flex-direction: column;
   margin: 0 !important;
   width: 100%;
   gap: 30px;
-
 }
 .cars1 .button {
   display: flex;
@@ -478,7 +459,7 @@ flex-direction: column;
   padding: 0 !important;
 }
 
-.container1 .stars{
+.container1 .stars {
   width: 62px;
   height: 36px;
   /* background: #dfdfdf; */
@@ -534,11 +515,9 @@ flex-direction: column;
   gap: 30px;
 }
 
-
 .carsPrice .descCards {
   font-size: 12px;
   font-weight: normal;
-
 }
 .carsPrice .btnCards {
   color: white;
@@ -549,8 +528,7 @@ flex-direction: column;
   border-radius: 30px;
   border-color: transparent;
   margin-top: 20px;
-
-} 
+}
 
 .btnCards:hover {
   color: blue;
@@ -584,18 +562,17 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
 }
-.motor .motor-main{
+.motor .motor-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
   margin-top: 50px;
-
 }
 
-.motor-main .card{
-  width:425px !important
+.motor-main .card {
+  width: 425px !important;
 }
 
 .motor-main .stars {
@@ -692,8 +669,7 @@ flex-direction: column;
   padding-top: 12px;
 }
 
-
-.motor .button{
+.motor .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -842,7 +818,7 @@ flex-direction: column;
   /* padding: 90px 50px 50px 50px; */
 }
 
-.reviewed{
+.reviewed {
   display: flex;
   justify-content: center;
   align-items: center;

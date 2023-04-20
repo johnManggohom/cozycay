@@ -1,10 +1,9 @@
-@media(max-width:1500px){
-  .first-bg .cars1{
+@media (max-width: 1500px) {
+  .first-bg .cars1 {
     width: 1020px;
     margin-top: -370px;
   }
 }
-
 
 @media (max-width: 1180px) {
   header {
@@ -43,18 +42,17 @@
   .list-mode p {
     width: 180px;
   }
-  
 }
 
-@media (max-width:1080px){
-  .first-bg .cars1{
+@media (max-width: 1080px) {
+  .first-bg .cars1 {
     width: 850px;
   }
   .tainer1 {
     gap: 0px;
   }
 
-  .reviewed{
+  .reviewed {
     gap: 10px;
   }
 }
@@ -65,45 +63,45 @@
   }
 }
 
-@media (max-width:945px) {
-  .section2{
+@media (max-width: 945px) {
+  .section2 {
     height: auto;
   }
-  .how1{
+  .how1 {
     gap: 70px;
   }
-  
-  .howContainer2 p{
+
+  .howContainer2 p {
     width: 400px;
   }
 
-  .howContainer3 p{
+  .howContainer3 p {
     width: 210px;
   }
-  .carousel-indicators{
+  .carousel-indicators {
     bottom: -15px !important;
   }
 }
 
-@media (max-width:845px) {
-  .section8{
+@media (max-width: 845px) {
+  .section8 {
     gap: 0px;
     width: 100%;
   }
-  .container8 .header8{
+  .container8 .header8 {
     width: 500px;
   }
-  .container8 .descText{
+  .container8 .descText {
     width: 385px;
   }
-  .section8 img{
+  .section8 img {
     top: 0px;
     right: 70px;
     width: 400px;
     height: 250px;
   }
 
-  .first-bg .logo1{
+  .first-bg .logo1 {
     width: 660px;
     height: 542px;
     margin-top: 0px;
@@ -112,19 +110,17 @@
     top: -115px;
   }
 
-  .first-bg .cars1{
+  .first-bg .cars1 {
     width: 680px;
     height: 308px;
     position: relative;
     top: 185px;
   }
 
-  .second-bg .container1{
+  .second-bg .container1 {
     padding: 74px 66px;
   }
 }
-
-
 
 @media (max-width: 800px) {
   .header-nav {
@@ -185,11 +181,11 @@
     gap: 100px;
   }
 
-  .section8 img{
+  .section8 img {
     display: none;
   }
 
-  .section8 .container8{
+  .section8 .container8 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -198,18 +194,18 @@
     left: 10px;
   }
 
-  .container8 .header8{
-    width:480px
+  .container8 .header8 {
+    width: 480px;
   }
-  .container8 .descText{
+  .container8 .descText {
     width: 500px;
   }
-  .container8 .subscribeI{
+  .container8 .subscribeI {
     justify-content: center;
     align-items: center;
   }
 
-  .how1{
+  .how1 {
     gap: 10px;
   }
 }
@@ -225,69 +221,61 @@
     gap: 50px;
   }
 
-  .first-bg .cars1{
+  .first-bg .cars1 {
     width: 568px;
     height: 215px;
-    top:268px;
+    top: 268px;
   }
 
-  .header-text h1{
+  .header-text h1 {
     font-size: 60px;
   }
 
-  .header-info p{
+  .header-info p {
     width: 465px;
   }
 
-  .first-bg .logo1{
+  .first-bg .logo1 {
     width: 500px;
     height: 441px;
   }
 
-  .how1{
+  .how1 {
     flex-direction: column;
   }
-  .content-carousel .colored-text2{
+  .content-carousel .colored-text2 {
     text-align: center;
   }
-  .carousel-indicators{
+  .carousel-indicators {
     bottom: -5px !important;
   }
 
-  .firstline{
+  .firstline {
     font-size: 36px;
   }
 
-  .contentH1 .thirdline{
-
+  .contentH1 .thirdline {
     width: 481px;
   }
 }
 
-
-@media (max-width:700px){
-  .contentH1 .thirdline{
-
+@media (max-width: 700px) {
+  .contentH1 .thirdline {
     width: 658px;
   }
-  .contentH1 .firstline{
+  .contentH1 .firstline {
     font-size: 36px;
   }
 }
 
-@media (max-width:660px){
-  .contentH1 .thirdline{
-
+@media (max-width: 660px) {
+  .contentH1 .thirdline {
     width: 485px;
   }
-  .contentH1 .firstline{
+  .contentH1 .firstline {
     font-size: 36px;
   }
 }
-
-
-
-
 
 @media (max-width: 540px) {
   .header-container h2 {
@@ -316,242 +304,239 @@
     padding-left: 20px !important;
   }
 
-  .section8 .container8{
+  .section8 .container8 {
     left: 0px;
   }
 
-  .container8 .header8{
+  .container8 .header8 {
     width: 360px;
     font-size: 28px;
   }
-  .container8 .descText{
+  .container8 .descText {
     font-size: 18px;
   }
 
-  .first-bg .cars1{
+  .first-bg .cars1 {
     width: 484px;
     height: 260px;
   }
 
-  .second-bg .container1{
+  .second-bg .container1 {
     padding: 73px 37px;
   }
 
-  .button .viewall{
+  .button .viewall {
     width: 360px;
   }
 
-  .section6{
+  .section6 {
     height: auto;
   }
 
-  .tainer1{
+  .tainer1 {
     gap: 70px;
   }
 
-  .tainer2{
+  .tainer2 {
     height: auto;
   }
 
-  .tainer3{
+  .tainer3 {
     width: 300px;
     height: 350px;
   }
 
-  .tainer3 .cha{
+  .tainer3 .cha {
     width: 250px;
   }
-  .webtit{
+  .webtit {
     font-size: 36px;
     width: 350px;
     text-align: center;
   }
 
-  .para{
+  .para {
     width: 265px;
   }
 }
 
-
-@media (max-width: 490px){
-  .header-container h2{
+@media (max-width: 490px) {
+  .header-container h2 {
     font-size: 18px;
   }
 
-  .header-container p{
+  .header-container p {
     font-size: 16px;
   }
 
-  .plan-container{
+  .plan-container {
     margin-left: -5px;
   }
 
-  .plan-container .btnPlan{
+  .plan-container .btnPlan {
     width: 250px;
-    left:25px;
+    left: 25px;
   }
 
-  .plan-container p{
+  .plan-container p {
     width: 328px;
   }
 
-  .container-text1 .headText{
+  .container-text1 .headText {
     font-size: 26px;
   }
-  .container-text1 p{
+  .container-text1 p {
     width: 356px;
   }
 
-  .container8 .header8{
+  .container8 .header8 {
     width: 230px;
     font-size: 28px;
   }
-  .container8 .descText{
+  .container8 .descText {
     width: 260px;
     font-size: 14px;
   }
 
-  .subscribeI input{
+  .subscribeI input {
     width: 302px;
   }
 
-  .section1 .second-bg{
+  .section1 .second-bg {
     height: auto;
   }
-  .first-bg .logo1{
+  .first-bg .logo1 {
     width: 445px;
   }
-  .first-bg .cars1{
+  .first-bg .cars1 {
     width: 350px;
     height: 209px;
   }
 
-  .header-info p{
+  .header-info p {
     width: 275px;
   }
-  .section-btn{
+  .section-btn {
     display: flex;
     flex-direction: column;
   }
-  .thirdline{
-
+  .thirdline {
     width: 363px;
   }
 
-  .contentH1 .thirdline{
+  .contentH1 .thirdline {
     width: 360px;
     text-align: center;
     margin-left: 55px;
   }
-  .cars1 .cards{
+  .cars1 .cards {
     width: 400px !important;
   }
 
-  .carsPrice .btnCards{
+  .carsPrice .btnCards {
     margin-top: -11px;
   }
 }
 
-@media (max-width:430px){
-  .section1 .first-bg{
+@media (max-width: 430px) {
+  .section1 .first-bg {
     gap: 100px;
   }
-  .first-bg .logo1{
-    width:302px;
+  .first-bg .logo1 {
+    width: 302px;
     height: 301px;
   }
 
-  .cars1 .cards{
+  .cars1 .cards {
     width: 342px !important;
   }
-  .motor-main .card{
+  .motor-main .card {
     width: 342px !important;
   }
 
-  .contentH1 .thirdline{
+  .contentH1 .thirdline {
     width: 404px;
     text-align: center;
     margin-left: 0;
   }
 }
 
-@media (max-width:400px) {
-  .first-bg .logo1{
+@media (max-width: 400px) {
+  .first-bg .logo1 {
     width: 375px;
   }
-  .howContainer2 p{
+
+  .howContainer2 p {
     width: 290px;
   }
 
-  .howContainer4 p{
+  .howContainer4 p {
     width: 345px;
   }
 
-  .button .viewall{
+  .button .viewall {
     width: 315px;
   }
-  .cards{
+  .cards {
     width: 300px;
     height: auto;
   }
 
-  .cards .imgCard{
+  .cards .imgCard {
     width: 300px;
     height: auto;
   }
 
-  .btnCards{
+  .btnCards {
     margin-left: 170px;
     margin-top: -57px;
   }
-  .titleCards{
+  .titleCards {
     font-size: 20px;
   }
 
-  .descCards{
+  .descCards {
     font-size: 14px;
   }
-  .imgCardCar{
+  .imgCardCar {
     width: 300px;
   }
 
-   .card{
+  .card {
     width: 305px !important;
   }
 
-  .carsPrice .btnCards{
+  .carsPrice .btnCards {
     margin-left: 0px;
     margin-top: -10px;
   }
 
-  .contentH1 .thirdline{
+  .contentH1 .thirdline {
     width: 388px;
   }
 
-  .cars1 .cards{
+  .cars1 .cards {
     width: 330px !important;
   }
 
-  .motor-main .card{
+  .motor-main .card {
     width: 333px !important;
   }
-  .tainer1{
+  .tainer1 {
     gap: 50px;
   }
 
-  .para{
-    width:275px;
+  .para {
+    width: 275px;
   }
-
-  
 }
 
-@media (max-width:375px){
-
-  .first-bg .logo1{
+@media (max-width: 375px) {
+  .first-bg .logo1 {
     width: 342px;
   }
-  .contentH1 .thirdline{
+
+  .contentH1 .thirdline {
     width: 352px;
     font-size: 12px;
   }
