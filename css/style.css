@@ -360,7 +360,7 @@ header img {
 /* Image alignment by step */
 
 .content-carousel .frame1 {
-  padding: 0px 0px 0px 400px;
+  /* padding: 0px 0px 0px 400px; */
 }
 .content-carousel .frame2 {
   padding: 0px 0px 0px 50px;
